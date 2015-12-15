@@ -11,9 +11,9 @@ public class Sender {
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
 	
-//	@Scheduled(cron = "0/2 * *  * * ? ")
-	@Scheduled(fixedDelay = 1000 * 60 * 60)
+	@Scheduled(cron = "0/2 * *  * * ? ")
+	//@Scheduled(fixedDelay = 1000 * 60 * 60)
 	public void send() {
-		rabbitTemplate.convertAndSend(QUEUE_NAME, "hello rabbitmq...");
+		rabbitTemplate.convertAndSend(QUEUE_NAME, "你好，我发送的消息 rabbitmq...");
 	}
 }
