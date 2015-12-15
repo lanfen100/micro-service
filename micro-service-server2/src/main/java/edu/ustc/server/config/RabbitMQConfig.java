@@ -68,7 +68,12 @@ public class RabbitMQConfig {
 		
 		CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
 		connectionFactory.setPublisherConfirms(true);
-		
+		//读取相关配置
+		connectionFactory.setHost("127.0.0.1");
+		connectionFactory.setPort(5672);
+		connectionFactory.setUsername("guest");
+		connectionFactory.setPassword("guest");
+
 		return connectionFactory;
 	}
 	
