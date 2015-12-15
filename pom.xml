@@ -15,10 +15,10 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<druid.version>1.0.15</druid.version>
+		<druid.version>1.0.16</druid.version>
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis.spring.version>1.2.3</mybatis.spring.version>
-		<mysql.version>5.1.31</mysql.version>
+		<mysql.version>5.1.37</mysql.version>
 		<commons.lang3.version>3.4</commons.lang3.version>
 		<springfox.version>2.2.2</springfox.version>
 		<retrofit.version>1.9.0</retrofit.version>
